@@ -1,0 +1,20 @@
+ <form id="form1" runat="server">
+        <div>
+
+            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="X-Large" Text="FILE UPLOAD CONTROL ASSIGNMENT 2"></asp:Label>
+            <br />
+            <br />
+            <asp:FileUpload ID="FileUpload1" runat="server" Width="351px" />
+            <br />
+            <br />
+            <asp:Button ID="Button1" runat="server" Height="25px" OnClick="Button1_Click" Text="SAVE" Width="74px" />
+            <br />
+            <br />
+            <asp:Label ID="Label2" runat="server" Font-Bold="True" ForeColor="#3333CC"></asp:Label>
+            <br />
+            <asp:Label ID="Label3" runat="server" Font-Bold="True" ForeColor="#3333CC"></asp:Label>
+            <br />
+            <asp:Label ID="Label4" runat="server" Font-Bold="True" ForeColor="#3333CC"></asp:Label>
+
+        </div>
+    </form>
