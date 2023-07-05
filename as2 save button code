@@ -2,7 +2,7 @@
             { 
                 try
                 {
-                    FileUpload1.SaveAs(Server.MapPath("~/images/") + FileUpload1.FileName);
+                    FileUpload1.SaveAs(Server.MapPath("~/images/") + Path.GetFileName(FileUpload1.FileName));
                     string filename = FileUpload1.PostedFile.FileName;
                     string filetype = FileUpload1.PostedFile.ContentType;
 
