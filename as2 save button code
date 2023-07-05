@@ -1,0 +1,22 @@
+ if (FileUpload1.HasFile)
+            { 
+                try
+                {
+                    FileUpload1.SaveAs(Server.MapPath("~/images/") + FileUpload1.FileName);
+                    string filename = FileUpload1.PostedFile.FileName;
+                    string filetype = FileUpload1.PostedFile.ContentType;
+
+                    Label3.Text = "Filename :" + filename;
+                    Label4.Text = "File Type : " + filetype;
+                    Label2.Text = "File Upload Successfully";
+
+                }
+                catch (Exception ex)
+                {
+
+                }
+            }
+            else
+            {
+                Label2.Text = "No File Selected Please Select File";
+            }
